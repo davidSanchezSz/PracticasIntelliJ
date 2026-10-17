@@ -1,0 +1,36 @@
+package SportsManager;
+
+import java.util.ArrayList;
+
+public enum Errors {
+
+    UNAUTHORIZED_COMMAND,
+    COMMAND_NOT_FOUND,
+    NON_EXISTING_USER,
+    WRONG_PASSWORD,
+    SYNTAX_ERROR,
+    FORMAT_ERROR,
+    EXISTING_PLAYER,
+    NON_EXISTING_PLAYER,
+    EXISTING_TEAM,
+    NON_EXISTING_TEAM,
+    EXISTING_TOURNAMENT,
+    NON_EXISTING_TOURNAMENT,
+    ALREADY_IN_TEAM,
+    NOT_IN_TEAM,
+    ALREADY_IN_TOURNAMENT,
+    NOT_IN_TOURNAMENT,
+    INVALID_MATCHMAKING,
+    TOURNAMENT_ACTIVE,
+    TOURNAMENT_NOT_ACTIVE,
+    ALREADY_LOGGED_IN,
+    NOBODY_LOGGED_IN,
+    INVALID_DATA,
+    ERROR,
+    NULL;
+
+    public boolean isNull(){
+        return this == Errors.NULL;
+    }
+
+}
